@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img-kamisama/inicio-registro.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Formulario Progra II</title>
+    <script src="https://kit.fontawesome.com/a39aeb331d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="script" href="index-registro.js">
+
+</head>
+<body>
+    <!--Se inicia a formar el header del formulario-->
+    <header>
+        <div class="nombre_logo">
+            <a href="index.html"class="reboot">
+            <h1  class="logo">Fan<span>Taku</span>Sama</h1></a>
+            <img src="img-kamisama/inicio-log in.png" class="img">
+            
+        </div>
+    </header>
+    <!--Se inicia el main del formulario-->
+    <main>
+        <div class="background"></div>
+        <div class="contenedor">
+            <div class="contenido">
+                <img src="img-kamisama/inicio-registro.png" class="image">
+                <h2 class="imgs">FanTakuSama</h2>
+                <div class="texto-contenido">
+                    <h2>Bienvenidos sean kamis!<br><span>A FanTakusama una página web para fans de Kamisama Hashimashita.</span></h2>
+                    <p>Kamisama Hajimemashita es una comedia romántica llena de mitología y eventos sobrenaturales. Al llegar a la dirección indicada, Nanami escucha voces de bienvenida en lo que parece ser un templo. Intrigada por ellas se dispone a entrar solo para encontrarse con dos espíritus y un demonio zorro, llamado Tomoe.</p>
+                    <iframe width="200" height="100"  src="https://www.youtube.com/embed/00G1px5DMtQ?si=5E2hmlGRctWmlz6l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe>
+                </div>
+            </div>
+            <div class="caja-inicio">
+                <div class="form-caja login">
+                    <form action="#">
+                        <h2>Iniciar Sesión</h2>
+
+                        <div class="ipt-caja">
+                            <span class="icono"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <input  id="email" type="email" placeholder="             ej. tomoe@gmail.com" required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        
+                        <div class="ipt-caja">
+                            <span class="icono"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            <label for="password"></label>
+                            <input id="password"  type="password"size="10" maxlength="10" placeholder="                         ••••••••••••••••••••••••••••" required/>
+                            <label for="password">Contraseña</label> 
+                           
+                        </div>
+                       
+
+                        <div class="recordar-clave">
+                            <label><input type="checkbox">Recordar me</label>
+                            <a href="#">Olvidaste tu contraseña??</a>
+                        </div>
+                        
+
+                        <button id="btn" type="submit" class="btn">Acceder</button>
+
+                        <div class="registrarte">
+                            <p>¿No tienes una cuenta todavia?<a href="index-registro.html" class="registro-link"> Crea una </a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="diseño_footer">
+            <div class="links-social-redes">
+                <h2>Sigueme en las siguientes redes sociales:</h2>
+                <ul>
+                    <li class="social-item"><a href="https://github.com/4969949901" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a href="https://www.facebook.com/helensita.tobar" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="diseño-footer">
+            Copyright &copy; FanTakuSama. Todos los derechos reservados.
+            Desarrollado por: Helen Acevedo 🔥 <a href="https://chat.whatsapp.com/JHzz4VfIQkTDMjSYwwfSVQ" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header=document.querySelector("header");
+            header.classList.toggle("abajo",window.scrollY>0);
+        })
+
+    </script>
+</body>
+</html>
+
+/* etiquetas utilizadas en el index (ordenadas en orden de aparicion):
+    1.html
+    2.head
+    3.meta
+    4.title
+    5.script
+    6.link
+    7.body
+    8.header
+    9.div
+   10.a
+   11.h1
+   12.img
+   13.main
+   14.h2
+   15.p
+   16.iframe
+   17.form
+   18.span
+   19.input
+   20.label
+   21.button
+   22.footer
+   23.ul
+   24.li
+   
+   Fin de las etiquetas utilizadas en el index principal-sign in
+   **Realizado por: Helen Acevedo 
+     curso: Programacion II
+
+*/

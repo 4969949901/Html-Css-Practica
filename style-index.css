@@ -1,0 +1,338 @@
+/* se trabaja el header */
+:root {
+    --color-primario:#43aaee;
+    --color-blanco:#e9e9e9;
+    --color-gris:#02020200;
+}
+@font-face {
+    font-family:titulo ;
+    src: url(animeace_b.ttf);
+
+}
+@font-face {
+    font-family:tituloDos ;
+    src: url(animeace_i.ttf);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: titulo,cursive;
+    background: #93e6ff;
+}
+header.abajo {
+    background: #83aaff;
+    
+}
+header.abajo  .nombre_logo {
+    color: #e9e9e9;
+}
+
+.nombre_logo {
+    background-color: var(--color-primario);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+
+}
+.logo {
+    color: var(--color-blanco);
+    text-shadow: 0 0 5px rgb(252, 140, 140), 0 0 15px white,0 0 30px white, 0 0 50px white;
+    font-size: 30px;
+}
+.logo span {
+    color:black;
+}
+
+.img {
+    display: block;
+    width: 57px;
+    filter: drop-shadow(5px 5px 10px white)
+    
+}
+.reboot {
+    color: transparent;
+}
+
+/*Se inicia a trabajar el main*/
+.main {
+    background-color: rgb(248, 248, 248);
+    font-family: titulo,cursive;
+    padding: 15px 32px;
+    border: none ;
+    text-align: center;
+    display: inline-block;
+    font-size: 5px;
+    margin: auto;
+}
+.background {
+    width: 100%;
+    height: 100vh;
+    background: url('img-kamisama/background-fondo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+}
+.contenedor {
+    position: absolute;
+    top: 58.1%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 550px;
+    background: url('img-kamisama/background-fondo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.contenedor .contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 5%;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+}
+.contenido .image{
+    display: block;
+    width: 57px;
+    filter: drop-shadow(5px 5px 10px white)
+}
+.contenido .imgs {
+    font-size: 30px;
+    text-align: left;
+    top:5px;
+ 
+}
+.texto-contenido h2 {
+    font-size: 35px;
+}
+.texto-contenido h2 span {
+    font-size: 18px;
+}
+.texto-contenido p {
+    font-size: 15px;
+    margin: 20px 0;
+    text-shadow: 0 0 5px rgb(145, 136, 136), 0 0 15px white,0 0 30px white, 0 0 50px white;
+}
+
+.contenedor .caja-inicio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+   
+}
+.caja-inicio .form-caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #000000;
+}
+.form-caja h2 {
+    font-size: 22px;
+    text-align: center;
+}
+.form-caja .ipt-caja {
+    position: relative;
+    width: 310px;
+    height: 38px;
+    border-bottom: 0.7px solid white;
+    margin: 25px 0;
+}
+.ipt-caja input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fffcfc;
+    font-weight: 500;
+    padding-right: 28px;
+}
+.ipt-caja label {
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+font-size: 16px;
+font-weight: 500;
+pointer-events: none;
+transition: .6s ease;
+}
+.ipt-caja input:focus ~ label,
+.ipt-caja input:valid ~ label {
+    top: -4px;
+}
+.ipt-caja .icono {
+    position: absolute;
+    top: 12px ;
+    right: 0;
+    font-size: 17spx;
+}
+.form-caja .recordar-clave {
+    font-size: 13px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.recordar-clave label input {
+    accent-color: #000;
+    margin-right: 3px;
+}
+.recordar-clave a {
+    color: #1d0341;
+    text-decoration: none;
+}
+.recordar-clave a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background:#43aaee ;
+    border: none;
+    outline:none;
+    border-radius:4 px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+}
+
+.btn:hover {
+    background: #0088e2;
+}
+.form-caja .registrarte {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.registrarte p a {
+    color: #1d0341;
+    font-weight: 600;
+    text-decoration: none;
+}
+.registrarte p a:hover {
+    text-decoration: underline;
+}
+
+/*Se realiza el diseño del footer*/
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    width: 100vw;
+    font-family: titulo,cursive;
+    padding-top: 1px;
+    background-color:#43aaee;
+}
+.diseño_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.links-social-redes {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem 0 1rem 0;
+}
+.links-social-redes h2 {
+    display: inline-block;
+    font-size:  18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    text-align: center;
+    font-family: tituloDos,cursive;
+    text-shadow: 0 0 5px rgb(224, 127, 195), 0 0 15px rgb(224, 118, 193),0 0 30px rgb(224, 126, 195), 0 0 50px rgb(224, 127, 195);
+}
+.links-social-redes ul {
+    padding: 08px;
+    display: flex;
+    width: 100px;
+    height: 2px;
+    margin: auto;
+}
+.social-item {
+ list-style: none;
+}
+.social-item a {
+    padding: 10px 20px;
+    font-size: 28px;
+    color: var(--color-blanco);
+    text-align: center;
+}
+.social-item a:hover {
+    color:rgb(56, 55, 54);
+}
+.diseño-footer {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #d2b0ff ;
+    text-shadow: 0 0 5px rgb(224, 127, 195), 0 0 15px rgb(224, 118, 193),0 0 30px rgb(224, 126, 195), 0 0 50px rgb(224, 127, 195);
+}
+
+@media (max-width: 900px ) {
+    .contenedor {
+        position: absolute;
+        top: 58.1%;
+        left: 50%;
+        width: 95%;
+        height: 850px;
+        margin-top: 20px;
+        
+    }
+
+    .texto-contenido h2 {
+        font-size: 10px;
+    }
+    .texto-contenido h2 span {
+        font-size: 10px;
+    }
+    .texto-contenido p {
+        font-size: 10px;
+        margin: 10px 0;
+        text-shadow: 0 0 5px rgb(145, 136, 136), 0 0 15px white,0 0 30px white, 0 0 50px white;
+    }
+    
+    
+
+    iframe {
+        width: 100;
+        height: 50;
+    }
+}
